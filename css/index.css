@@ -185,6 +185,17 @@ header .nav a {
   padding-top: 1rem;
   border-radius: 50%;
 }
+@media (min-width: 900px) {
+  #intro .self-portrait {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media (min-width: 900px) {
+  #intro .contianer {
+    width: 8rem;
+  }
+}
 #intro .title-container {
   margin: 0.5rem 0 0.5rem 0;
 }
@@ -217,6 +228,14 @@ header .nav a {
 @media (min-width: 700px) {
   #intro {
     text-align: left;
+  }
+}
+@media (min-width: 900px) {
+  #intro {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem 2rem 3rem;
+    height: 21rem;
   }
 }
 /**** ABOUT ****/
