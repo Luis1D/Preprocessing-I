@@ -136,11 +136,17 @@ body {
 }
 /**** START OF MY CSS ****/
 /* VARIABLES */
+/* MIXINS */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 body {
   background-color: #454d57;
   padding: 1rem;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5rem;
 }
 #main-container {
   width: 90%;
@@ -186,6 +192,9 @@ header .nav a {
   margin: 1rem;
   font-size: 1.25rem;
 }
+#intro .title-container h2 {
+  margin: 1rem;
+}
 #intro .text-container {
   padding: 1rem;
 }
@@ -199,6 +208,16 @@ header .nav a {
   border: none;
   background-color: #ececec;
   cursor: pointer;
+}
+@media (min-width: 700px) {
+  #intro .text-container button {
+    margin: 1rem 1rem 1rem 0;
+  }
+}
+@media (min-width: 700px) {
+  #intro {
+    text-align: left;
+  }
 }
 /**** ABOUT ****/
 #about {
@@ -215,6 +234,11 @@ header .nav a {
 }
 #about p {
   color: #454d57;
+}
+@media (min-width: 700px) {
+  #about {
+    text-align: left;
+  }
 }
 /**** SKILLS ****/
 #skills {
