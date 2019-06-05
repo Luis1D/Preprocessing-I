@@ -57,3 +57,76 @@ html, body {
     height: 100%;
 }
 
+/**** START OF MY CSS ****/
+
+/* VARIABLES */
+@primary: rgb(69, 77, 87);
+@secondary: rgb(236, 236, 236);
+
+body {
+	background-color: @primary;
+	padding: 1rem;
+	letter-spacing: 2px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#main-container {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: @secondary;
+	border-radius: 1rem;
+	box-shadow: 0 .5rem 1rem .5rem rgba(0, 0, 0, 0.336);
+}
+header {
+	width: 100%;
+	
+	.nav {
+		display: flex;
+		justify-content: center;
+		justify-content: space-evenly;
+		padding: 1rem;
+		a {
+			text-decoration: none;
+			color: #000;
+			text-transform: uppercase;
+		}
+	}
+}
+#intro {
+	width: 90%;
+	height: 30rem;
+	margin: 0 auto;
+	background-color: rgb(190, 190, 190);
+	text-align: center;
+
+	.self-portrait {
+		width: 15rem;
+		display: block;
+		margin: 0 auto;
+		padding-top: 1rem;
+		border-radius: 50%;
+	}
+
+	.title-container {
+		margin: .5rem 0 .5rem 0;
+		h1 {
+		margin: 1rem;
+		font-size: 1.25rem;
+		}
+	}
+	.text-container {
+		padding: 1rem;
+		p {
+			color: @primary;
+		}
+		button {
+			width: 9rem;
+			height: 2rem;
+			margin: 1rem;
+			border: none;
+			background-color: @secondary;
+			cursor: pointer;
+		}
+	}
+}
