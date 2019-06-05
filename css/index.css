@@ -144,12 +144,12 @@ body {
 }
 #main-container {
   width: 90%;
-  height: 100%;
   margin: 0 auto;
   background-color: #ececec;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.336);
 }
+/**** HEADER ****/
 header {
   width: 100%;
 }
@@ -164,9 +164,10 @@ header .nav a {
   color: #000;
   text-transform: uppercase;
 }
+/**** INTRO ****/
 #intro {
   width: 90%;
-  height: 30rem;
+  height: 29rem;
   margin: 0 auto;
   background-color: #bebebe;
   text-align: center;
@@ -198,4 +199,71 @@ header .nav a {
   border: none;
   background-color: #ececec;
   cursor: pointer;
+}
+/**** ABOUT ****/
+#about {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+#about h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #454d57;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#about p {
+  color: #454d57;
+}
+/**** SKILLS ****/
+#skills {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#skills .list-container {
+  border: 1px solid #454d57;
+}
+#skills h2 {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+#skills p {
+  border-bottom: 1px solid #454d57;
+  color: #454d57;
+  padding: 1rem;
+}
+/**** WORK HISTORY ****/
+#work-history {
+  margin-bottom: 5rem;
+}
+#work-history table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+#work-history table td,
+#work-history table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#work-history table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/**** FOOTER ****/
+#main-footer {
+  width: 100%;
+  background-color: #bebebe;
+  height: 5rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+#main-footer h3 {
+  color: #454d57;
 }
