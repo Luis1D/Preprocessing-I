@@ -141,6 +141,14 @@ body {
   display: flex;
   flex-direction: row;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.header-size {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
 body {
   background-color: #454d57;
   padding: 1rem;
@@ -203,6 +211,11 @@ header .nav a {
   margin: 1rem;
   font-size: 1.25rem;
 }
+@media (min-width: 900px) {
+  #intro .title-container h1 {
+    font-size: 1.75rem;
+  }
+}
 #intro .title-container h2 {
   margin: 1rem;
 }
@@ -247,8 +260,8 @@ header .nav a {
 }
 #about h2 {
   font-size: 1.5rem;
+  padding: 0.5rem;
   border-bottom: 1px solid #454d57;
-  padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
 }
 #about p {
@@ -271,8 +284,8 @@ header .nav a {
   border: 1px solid #454d57;
 }
 #skills h2 {
-  padding: 0.5rem;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 #skills p {
   border-bottom: 1px solid #454d57;
@@ -288,8 +301,8 @@ header .nav a {
   text-align: center;
 }
 #work-history h2 {
-  padding: 0.5rem;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 #work-history table {
   font-size: 0.9rem;
@@ -316,6 +329,30 @@ header .nav a {
     flex-direction: row;
     margin: 0 3rem 0 3rem;
   }
+}
+/**** CONTACT FORM ****/
+#contact {
+  width: 90%;
+  margin: 0 auto;
+}
+#contact h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+#contact .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+#contact .contact-form input {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+#contact .contact-form button {
+  margin: 0 auto;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 9rem;
 }
 /**** FOOTER ****/
 #main-footer {

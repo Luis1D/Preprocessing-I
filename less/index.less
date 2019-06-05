@@ -68,6 +68,14 @@ html, body {
 	display: flex;
 	flex-direction: row;
 }
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.header-size {
+	font-size: 1.5rem;
+	padding: .5rem;
+}
 
 
 body {
@@ -133,6 +141,10 @@ header {
 		h1 {
 		margin: 1rem;
 		font-size: 1.25rem;
+
+			@media (min-width: 900px) {
+			font-size: 1.75rem;
+			}
 		}
 		h2 {
 			margin: 1rem;
@@ -175,9 +187,8 @@ header {
 	padding: 1rem;
 
 	h2 {
-		font-size: 1.5rem;
+		.header-size();
 		border-bottom: 1px solid @primary;
-		padding-bottom: .5rem;
 		margin-bottom: .5rem;
 	}
 	p {
@@ -202,7 +213,7 @@ header {
 	}
 	h2 {
 		padding: .5rem;
-		font-size: 1.5rem;
+		.header-size();
 	}
 	p {
 		border-bottom: 1px solid @primary;
@@ -220,8 +231,7 @@ header {
 	text-align: center;
 	
 	h2 {
-		padding: .5rem;
-		font-size: 1.5rem;
+		.header-size();
 	}
 	table {
 	font-size: .9rem;
@@ -250,6 +260,30 @@ header {
 	}
 }
 
+/**** CONTACT FORM ****/
+#contact {
+	width: 90%;
+	margin: 0 auto;
+	h3 {
+		.header-size();
+	}
+	.contact-form {
+		.flex-column();
+
+		input {
+			padding: .5rem;
+			margin-top: .5rem;
+		}
+		button {
+			margin: 0 auto;
+			padding: .5rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			width: 9rem;
+		}
+	}
+	
+}
 
 /**** FOOTER ****/
 #main-footer {
