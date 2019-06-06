@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +14,104 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <section id="main-container">
+
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- INTRO -->
+    <section id="intro">
+      <img src="imgs/portrait.jpg" alt="self-portrait" class="self-portrait">
+      <div class="container">
+        <div class="title-container">
+          <h1>JOHN SMITH - WEB DEVELOPER</h1>
+          <h2>Lorem, ipsum dolor.</h2>
+        </div>
+        <div class="text-container">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, officia.</p>
+          <button>PRESS</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>ABOUT</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci et, culpa eveniet voluptas tempora sunt obcaecati exercitationem totam? 
+        Neque odio deleniti provident numquam dignissimos placeat dicta laudantium cupiditate ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Temporibus, consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, in!</p>
+    </section>
+
+    <div id="flex-wrapper">
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>SKILLS</h2>
+        <div class="list-container">
+          <p>Disc Golf</p>
+          <p>Coding up UI</p>
+          <p>Playing lots of video games</p>
+          <p>Using bootstrap grid</p>
+          <p>Taking long naps</p>
+        </div>
+      </section>
+
+      <!-- WORK HISTORY -->
+      <section id="work-history">
+        <div class="container-history">
+          <h2>WORK HISTORY</h2>
+          <table>
+            <tr>
+              <th>Yrs</th>
+              <th>Company</th>
+              <th>Title</th>
+              <th>Tech Used</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Apple</td>
+              <td>Software Engineer</td>
+              <td>Swift</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Microsoft</td>
+              <td>Computer Scientist</td>
+              <td>.NET</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Amazon</td>
+              <td>Dev Ops</td>
+              <td>AWS</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+    
+    <!-- CONTACT FORM-->
+    <section id="contact">
+      <h3>CONTACT</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="What do I call you?">
+        <input type="text" placeholder="Phone Number">
+        <input type="email" placeholder="Email">
+        <button>SUBMIT</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+      <h3>Copyright Awsomeness</h3>
+    </footer>
+
+  </section>
 </body>
 </html>
